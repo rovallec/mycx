@@ -1,0 +1,51 @@
+<div class="main-frame-container">
+    <div class="d-flex justify-content-center" style="margin-top:25px;">
+        <img src="https://github.com/mdo.png" alt="Photo" class="circle-photo">
+    </div>
+    <div class="row" style="margin-top:25px;">
+        <div class="col-md-12">
+            <label>Display Name:</label>
+            <input type="text" disabled class="form-control" [(ngModel)]='this.profile.displayName'>
+        </div>
+    </div>
+    <div class="row" style="margin-top:25px;">
+        <div class="col-md-4">
+            <label>LOB:</label>
+            <input type="text" disabled class="form-control" [(ngModel)]='this.profile.officeLocation'>
+        </div>
+        <div class="col-md-4">
+            <label>Department:</label>
+            <input type="text" disabled class="form-control" placeholder="Client 1">
+        </div>
+        <div class="col-md-4">
+            <label>Group:</label>
+            <input type="text" disabled class="form-control" [(ngModel)]='this.profile.jobTitle'>
+        </div>
+    </div>
+    <div class="row" style="margin-top:25px;">
+        <div class="col-md-6">
+            <label>Birthday:</label>
+            <input type="text" disabled class="form-control" placeholder="1996-10-27">
+        </div>
+        <div class="col-md-6">
+            <label>Gender:</label>
+            <input type="text" disabled class="form-control" placeholder="Male">
+        </div>
+    </div>
+    <div class="row" style="margin-top:25px;">
+        <div class="col-md-6">
+            <label>Corporative Email:</label>
+            <input type="text" disabled class="form-control" [(ngModel)]='this.profile.mail'>
+        </div>
+        <div class="col-md-6">
+            <label>Personal Email:</label>
+            <input type="text" disabled class="form-control" placeholder="testi_testerson_96@yahoo.com">
+        </div>
+    </div>
+    <div class="row" style="margin-top:25px; padding-bottom: 25px;">
+        <div class="col-md-12">
+            <label>Address:</label>
+            <textarea rows="3" class="form-control" disabled></textarea>
+        </div>
+        </div>
+</div>

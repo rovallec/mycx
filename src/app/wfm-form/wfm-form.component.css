@@ -1,0 +1,36 @@
+.main-frame-container {
+    flex: 1; /* Allows the frame-container to take up all available space */
+    min-width: 65vw;
+    margin-left: 5vw;
+  }
+
+div.row{
+    display: flex;
+    flex: 1; /* Allows the frame-container to take up all available space */
+}
+
+label{
+    color:white;
+}
+
+input:disabled{
+    background-color: rgb(190, 188, 188);
+}
+
+.btn-outline-cxbutton{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px;
+    width: 100px;
+    font-weight: bolder;
+}
+
+.btn-outline-cxbutton:hover{
+    background:#340f3c;
+    color: white;
+    border-color: #340f3c;
+    border-width: 3px;
+    width: 100px;
+    font-weight: bolder;
+}

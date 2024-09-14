@@ -1,0 +1,117 @@
+.app-container {
+    display: flex;
+    /*height: 100vh;
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+  
+  app-navbar {
+    background-color: black;    
+    padding: 10px;
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    background-color: transparent;
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+  
+  app-left-panel {
+    min-width: 75px;
+    max-width: 300px;
+    width:25%;
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+  
+  app-main-content {
+    min-height: 91.7vh;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .main{
+    display: flex;
+    flex: 1;
+    min-height: 89vh;
+    background: linear-gradient(
+    to right, 
+    rgba(40, 11, 42, 0.9),  /* #280b2a with 70% opacity */
+    rgba(131, 23, 63, 0.9)   /* #83173f with 70% opacity */
+  );
+  }
+  /* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Active link color */
+  color: white;
+}
+
+.navbar-brand img {
+  width: 100%; /* Make logo responsive */
+  max-width: 130px; /* Max width for larger screens */
+}
+
+/* Main content area */
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /*height: 100vh;*/
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 1200px) {
+  .app-left-panel {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-left-panel {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-left-panel {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .navbar-brand img {
+    max-width: 100px; /* Adjust logo size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 80px; /* Adjust logo size further for very small screens */
+  }
+
+  .main-frame-container {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  .row {
+    margin-top: 5px; /* Adjust row margins */
+  }
+
+  .col-md-2, .col-md-8 {
+    flex: 1; /* Make columns flexible */
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons on small screens */
+  }
+}

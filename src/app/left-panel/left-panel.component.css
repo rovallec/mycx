@@ -1,0 +1,25 @@
+.nav-link.active{
+    background-color: #832c4f;
+  }
+  
+  .cx-side{
+      background-image: url('https://cxperts.us/wp-content/uploads/2023/10/purplebg.png');
+      /*background-size: cover; /* Ensures the image covers the entire div */
+      /*background-position: center; /* Centers the image in the div */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-position-x: 80;
+      width: 100%; /* Adjust width as necessary */
+  }
+  
+  .nav{
+      padding-top: 10px;
+  }
+  
+  .btn-group .dropdown-menu {
+    z-index: 1050; /* Ensure dropdown menu appears above other content */
+  }
+  
+  .nav-user{
+    margin-left:15px;
+  }
+  

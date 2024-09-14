@@ -1,0 +1,30 @@
+.main-frame-container {
+    flex: 1;
+    height: 100%; /* Full height of parent */
+    min-width: 70vw;
+  }
+
+div.row{
+    display: flex;
+    flex: 1; /* Allows the frame-container to take up all available space */
+    margin-left: 2.5vw;
+}
+
+label{
+    color:white;
+}
+
+input:disabled{
+    background-color: rgb(190, 188, 188);
+}
+
+TEXTAREA:disabled{
+    background-color: rgb(190, 188, 188);
+}
+.circle-photo {
+    width: 175px; /* Adjust size as needed */
+    height: 175px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 3px solid #ddd; /* Optional border */
+  }
