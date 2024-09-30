@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 include 'db_connect.php';
 
 // SQL query to fetch data from the globalMenus table
-$sql = "SELECT * FROM globalMenus WHERE `idGroup` = 0";
+$sql = "SELECT * FROM globalMenus WHERE `idGroup` = 2";
 $result = $conn->query($sql);
 
 // Check if query was successful
