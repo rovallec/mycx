@@ -28,7 +28,7 @@ export function MSALInstanceFactory(): IPublicClientApplication {
       // Full directory URL, in the form of https://login.microsoftonline.com/<tenant>
       authority: "https://login.microsoftonline.com/493d3197-02bf-4b92-92a0-9c847aaea65c",
       // Must be the same redirectUri as what was provided in your app registration.
-      redirectUri: "http://localhost:4200",
+      redirectUri: "https://my.cxperts.us",
     },
     cache: {
       cacheLocation: BrowserCacheLocation.LocalStorage,
