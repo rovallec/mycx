@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 
 $servername = "localhost";
 $username = "root";
-$password = "J2eN5t$ZxWXn#K";
+$password = 'J2eN5t$ZxWXn#K';
 $dbname = "mycx";
 
 // Create connection
