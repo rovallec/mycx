@@ -12,7 +12,7 @@ import { wfmForm } from './wfmForm';
 })
 export class MainService {
 
-  private apiUrl = 'http://localhost/phpScripts/'; // URL to your PHP script
+  private apiUrl = 'https://my.cxperts.us/phpScripts/'; // URL to your PHP script
 
   constructor(private http: HttpClient) { }
 
