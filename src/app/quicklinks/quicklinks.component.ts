@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { quickLinks } from '../quickLinks';
 
+import { MainService } from '../main.service'
+
+
 
 @Component({
   selector: 'app-quicklinks',
@@ -10,14 +13,21 @@ import { quickLinks } from '../quickLinks';
 })
 export class QuicklinksComponent {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,    private mainService: MainService
+  ) {}
 
   apps!: quickLinks[];
+  errorMessage: string | null = null;
+
 
   ngOnInit() {
-    this.http.get<quickLinks[]>('https://graph.microsoft.com/v1.0/me')
-    .subscribe(quickLinks => {
-      this.apps = quickLinks;
+    this.mainService.getQuickLinks().subscribe({
+      next: (response) => {
+        this.apps = response;
+      },
+      error: (err) => {
+        this.errorMessage = 'Error fetching locations: ' + err.message;
+      }
     });
   }
 
