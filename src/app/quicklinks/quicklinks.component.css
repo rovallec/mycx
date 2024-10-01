@@ -1,0 +1,45 @@
+/* Ensure the container takes 100% of the width and height, centering both horizontally and vertically */
+.full-width {
+    width: 70vw; /* Full width of the viewport */
+    height: 60vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+/* Define the grid to have exactly 3 columns */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Spacing between grid items */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: Set a maximum width if needed */
+    padding: 20px;
+}
+  
+/* Each app grid item styling */
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+  
+/* Icon styling */
+.app-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+  
+/* App title styling */
+.app-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}

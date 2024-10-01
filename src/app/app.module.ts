@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';  // Import FormsModule
 // Required for MSAL
 import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
 import { MsalGuard, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, MsalModule, MsalService, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, MsalGuardConfiguration, MsalRedirectComponent } from '@azure/msal-angular';
+import { QuicklinksComponent } from './quicklinks/quicklinks.component';
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
 
@@ -28,7 +29,8 @@ export function MSALInstanceFactory(): IPublicClientApplication {
       // Full directory URL, in the form of https://login.microsoftonline.com/<tenant>
       authority: "https://login.microsoftonline.com/493d3197-02bf-4b92-92a0-9c847aaea65c",
       // Must be the same redirectUri as what was provided in your app registration.
-      redirectUri: "https://my.cxperts.us",
+      //redirectUri: "https://my.cxperts.us",
+      redirectUri: "http://localhost:4200",
     },
     cache: {
       cacheLocation: BrowserCacheLocation.LocalStorage,
@@ -64,7 +66,8 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     ProfileComponent,
     NavbarComponent,
     MainContentComponent,
-    LeftPanelComponent
+    LeftPanelComponent,
+    QuicklinksComponent
   ],
   imports: [
     BrowserModule,

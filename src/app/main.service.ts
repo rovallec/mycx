@@ -5,6 +5,7 @@ import { Location } from './locations'; // Adjust the path as needed
 import { Verticals } from './verticals';
 import { issueTypes } from './issueTypes';
 import { wfmForm } from './wfmForm';
+import { quickLinks } from './quickLinks';
 
 
 @Injectable({
@@ -26,6 +27,10 @@ export class MainService {
   
   getIssueTypes(): Observable<issueTypes[]> {
     return this.http.get<Location[]>(this.apiUrl + 'getIssueTypes.php');
+  }
+
+  getQuickLinks(): Observable<quickLinks[]> {
+    return this.http.get<quickLinks[]>(this.apiUrl + 'getquickLinks.php');
   }
 
   insertAdjustment(adj:wfmForm):Observable<any>{

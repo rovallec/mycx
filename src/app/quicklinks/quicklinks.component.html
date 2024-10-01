@@ -1,0 +1,11 @@
+<div class="container-fluid full-width">
+    <div class="app-grid">
+      <div class="app-item" *ngFor="let app of apps">
+        <a [href]="app.url" target="_blank">
+          <img [src]="app.icon" alt="{{ app.name }} icon" class="app-icon">
+        </a>
+        <h5 class="app-title">{{ app.name }}</h5>
+      </div>
+    </div>
+  </div>
+  
